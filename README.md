@@ -1,3 +1,9 @@
+# How to run:
+Note: You need NPM in order to run this app.
+
+1. npm install
+2. npm run dev
+
 # Objective:
 Build a TypeScript-based React frontend application for a bookstore system.
 
@@ -63,12 +69,15 @@ AWS for backend services and GitHub Actions for easy CI/CD.
 I would track users with Amplitude and monitor errors with Sentry.
 
 # 3 Summary of features that were not implemented
-Search feature:
+1. Search feature:
 I would put the logic on the backend for better performance. Doing it on the frontend would be slower and less scalable.
-List of books:
+
+2. List of books:
 I would use a virtualized list to load only a small batch (50/100 books) at a time. Then add pagination or infinite scroll to load more as needed to keep it fast.
-Stock quantity & cart management:
+
+3. Stock quantity & cart management:
 I would use GraphQL subscriptions to keep it updated in real-time. This would prevent users from getting frustrated by an "out of stock" due to high traffic.
-User profile:
+
+4. User profile:
 I would fetch the latest data when the user hits the edit profile functionality to ensure the data is up-to-date with the server.
 Also, I would add a timestamp to the request to prevent race conditions and ensure that updates are applied in the correct order, especially if multiple updates are happening at once.

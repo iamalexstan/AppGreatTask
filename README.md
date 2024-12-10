@@ -15,6 +15,7 @@ Planning and setting things up properly came first.
 
 
 # 1 A short description of the structure/architecture of the application.
+```
 src/
   ├── assets/                     # Static assets (images, fonts, etc.)
   ├── modules/                    # Feature-based organization
@@ -52,6 +53,7 @@ src/
   ├── configs/                    # App configurations
   ├── constants/                  # Constant values
   └── tests/                      # Unit and integration tests
+```
 
 # 2 Tech stack & key technical choices
 Apart from the standard React with TypeScript I would choose Vite for fast builds, and React Router for navigation. I would use an internal library wrapped around Material UI with a custom theme for a quick and comprehensive UI.
